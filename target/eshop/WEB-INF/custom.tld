@@ -1,0 +1,14 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>Example TLD</short-name>
+    <tag>
+        <name>Authority</name>
+        <tag-class>org.yfcloud.eshop.customTag.Authority</tag-class>
+        <attribute>
+            <name>resources</name>
+            <required>true</required>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+</taglib>
