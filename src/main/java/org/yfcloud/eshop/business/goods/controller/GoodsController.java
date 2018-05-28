@@ -3,18 +3,14 @@ package org.yfcloud.eshop.business.goods.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.yfcloud.eshop.business.goods.model.Goods;
 import org.yfcloud.eshop.business.goods.service.GoodsService;
 import org.yfcloud.eshop.business.goodsClassify.model.GoodsClassify;
 import org.yfcloud.eshop.business.goodsClassify.service.GoodsClassifyService;
-import org.yfcloud.eshop.system.user.model.User;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import java.io.File;
 import java.util.List;
 
 /**
@@ -57,8 +53,8 @@ public class GoodsController {
 
 
     //保存或者更新商品
-    @RequestMapping("/saveOrUpdateGoods")
-    public ModelAndView saveOrUpdateGoods(MultipartFile picture, Goods goods, HttpServletRequest request){
+   /* @RequestMapping("/saveOrUpdateGoods")
+   *//* public ModelAndView saveOrUpdateGoods(MultipartFile picture, Goods goods, HttpServletRequest request){
         ModelAndView view = new ModelAndView();
         String trueFileName = null;
         try{
@@ -103,11 +99,11 @@ public class GoodsController {
             e.printStackTrace();
         }
         return view;
-    }
+    }*//*
 
     //查出商品
     @RequestMapping("/list")
-    @ResponseBody
+    @ResponseBody*/
     public List<Goods> listGoods(String name){
         List<Goods> list = null;
         try{

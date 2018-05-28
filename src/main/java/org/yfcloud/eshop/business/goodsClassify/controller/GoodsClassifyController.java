@@ -29,6 +29,7 @@ public class GoodsClassifyController {
         ModelAndView view = new ModelAndView();
         try {
             view.setViewName("goodsClassify/goodsClassifyIndex");
+
         }catch (Exception e){
             e.printStackTrace();
         }

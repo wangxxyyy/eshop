@@ -142,6 +142,7 @@
     where parent_id = "0"
   </select>
 
+
   <select id="getGoodsClassify" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select <include refid="Base_Column_List" />
     from goods_classify
